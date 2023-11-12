@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: sans-serif;
+    font-size: 16px;
+    position: relative;
+    background-color: hsl(225, 100%, 94%);
+    background-image: url(/pattern-background-desktop.svg);
+}
+.main {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+} 
+.container{
+    position:   absolute;
+    left: 50%;
+    top: 50%;
+    transform:translate(-50%, -50%);
+    max-width: 450px;
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.text {
+    padding: 10px;  
+}
+.text h1{
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: hsl(223, 47%, 23%);
+}
+.text p{
+    font-size: 25px;
+    margin-bottom: 20px;
+    color: #8a8a8a;
+    margin: 10px;
+}
+span{
+    color: #8a8a8a;
+    margin-top: 5px;
+    margin-left: 0px;
+}
+.annual{
+    background-color: hsl(225, 100%, 98%);
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+.left-annual{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    text-align: left;
+}
+.left-annual div{
+    margin-left: 0px;
+}
+.left-annual h5{
+    font-weight: 900;
+    font-size: 15px;
+   color: hsl(223, 47%, 23%);
+}
+.annual a{
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+.btn {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+  }
+  
+  .btn a{
+    padding: 20px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 15px;
+    transition: background-color 0.3s ease;
+  }
+  a.Proceed-btn {
+    display: block;
+    background-color: hsl(245, 75%, 52%); 
+    margin: 20px;  
+    margin-top: 0px;
+    color: black;
+  }
+  .cancel-btn {
+    background-color:hsl(225, 100%, 94%);
+    margin: 20px;
+    margin-top: 0px;
+  }
+
+
+
+  @media only screen and (max-width: 425px){
+    body{
+        font-size: 14px;
+        background-image: url(/pattern-background-mobile.svg)
+    }
+    .container{
+        max-width: 80%;
+        
+    }
+    .text{
+        font-size: 23px;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+ }
+    .attribution a { 
+        color: hsl(228, 45%, 44%); 
+}
